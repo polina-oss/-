@@ -4,7 +4,7 @@ int main() {
     unsigned int num, count = 0;
     int i;
 
-    printf("Enter a positive integer: ");
+    printf("введите число: ");
     scanf("%u", &num);
 
     for (i = 0; i < 32; i++) {
@@ -14,7 +14,7 @@ int main() {
         num >>= 1;
     }
 
-    printf("The number of 1's in the binary representation is: %d\n", count);
+    printf("количество единиц в: %d\n", count);
 
     return 0;
 }

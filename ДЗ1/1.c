@@ -4,10 +4,10 @@
 int main() {
     int num, i;
 
-    printf("Enter a positive integer: ");
+    printf("введите число: ");
     scanf("%d", &num);
 
-    printf("Binary representation of %d: ", num);
+    printf("двоичная система %d: ", num);
 
     for (i = 31; i >= 0; i--) {
         if ((num >> i) & 1) {
