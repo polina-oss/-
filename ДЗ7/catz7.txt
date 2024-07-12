@@ -1,0 +1,6 @@
+
+   gcc -c add.c sub.c mul.c div.c
+   ar rcs libcalc.a add.o sub.o mul.o div.o
+   gcc -o calculator z7.c -L. -lcalc
+   ./calculator
+
