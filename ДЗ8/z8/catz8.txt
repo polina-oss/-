@@ -1,0 +1,5 @@
+   gcc -c add.c sub.c mul.c div.c
+   gcc -shared -o libcalc.so add.o sub.o mul.o div.o
+   gcc -o calculator z8.c -L. -lcalc -ldl
+   ./calculator
+
