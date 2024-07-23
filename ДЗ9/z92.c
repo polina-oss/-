@@ -104,6 +104,11 @@ void handle_enter_key(int panel_index) {
     }
 }
 
+void exit_program() {
+    endwin();
+    exit(0);
+}
+
 int main() {
     initscr();
     curs_set(0);
@@ -126,12 +131,12 @@ int main() {
             case 10: // Enter key
                 handle_enter_key(current_panel);
                 break;
-            case 'q':
-                endwin();
-                return 0;
+            case 17: // Ctrl+Q
+            case 27: // Esc
+                exit_program();
+                break;
         }
     }
 
     return 0;
 }
-
